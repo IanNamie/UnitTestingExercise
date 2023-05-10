@@ -6,8 +6,13 @@ namespace UnitTestingExercise.Tests
     public class UnitTests
     {
         [Theory]
-        [InlineData(2, 3, 5, 10)] //Add test data <-------
-        public void AddTest(int num1, int num2, int num3, int expected)
+        [InlineData(2, 3, 5, 10)]
+		[InlineData(5, 5, 5, 15)]
+		[InlineData(-10, 20, 8, 18)]
+		[InlineData(100, 100, -199, 1)]
+        
+        //Add test data <-------
+		public void AddTest(int num1, int num2, int num3, int expected)
         {
             //Start Step 3 here:
 
